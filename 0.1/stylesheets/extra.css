@@ -1,4 +1,4 @@
-body p {
+article p {
     text-align: "justify" !important;
     word-break: "keep-all" !important;
 }
