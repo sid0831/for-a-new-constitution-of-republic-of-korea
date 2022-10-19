@@ -1,0 +1,40 @@
+site_name: "대한민국헌법(안)"
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: "밝게 보기"
+    - scheme: default
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: "어둡게 보기"
+  font:
+    text: Noto Sans KR
+    code: Nanum Gothic Coding
+  language: kr
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+extra:
+  version:
+    provider: mike
+    default: "latest"
+extra_css:
+  - stylesheets/extra.css
+copyright: "&copy; 2014-2022 Sidney Jeong, CC BY-SA 4.0"
+repo_url: https://github.com/sid0831/for-a-new-constitution-of-republic-of-korea
+repo_name: "sid0831/for-a-new-constitution-of-republic-of-korea"
+nav:
+  - index.md
+  - preamble.md
+  - chapter1.md
