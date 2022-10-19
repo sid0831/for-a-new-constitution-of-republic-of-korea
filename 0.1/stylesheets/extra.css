@@ -1,4 +1,4 @@
-:root {
-    --md-text-align: "justify";
-    --md-word-break: "keep-all";
+p {
+    text-align: "justify";
+    word-break: "keep-all";
 }
