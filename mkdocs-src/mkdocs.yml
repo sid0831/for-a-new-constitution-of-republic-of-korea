@@ -31,10 +31,11 @@ extra:
     default: "latest"
 extra_css:
   - stylesheets/extra.css
-copyright: "&copy; 2014-2022 Sidney Jeong, CC BY-SA 4.0"
+copyright: "&copy; 2014-2022 Sidney Jeong, CC BY-SA 4.0. 이 사이트에서 제공하는 헌법안의 내용은 저의 개인적인 제안이며, 어느 관할구역에서도 효력이 없습니다."
 repo_url: https://github.com/sid0831/for-a-new-constitution-of-republic-of-korea
 repo_name: "sid0831/for-a-new-constitution-of-republic-of-korea"
 nav:
   - index.md
   - preamble.md
   - chapter1.md
+  - chapter2.md
