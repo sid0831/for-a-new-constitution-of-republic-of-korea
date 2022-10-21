@@ -18,8 +18,8 @@ COPY --chown=www-data:www-data nginx.conf /opt/nginx/conf.d/
 COPY --chown=www-data:www-data cloudflare.ini /opt/nginx/
 COPY --chown=www-data:www-data site /opt/nginx/content.d/
 
-RUN chmod 400 /opt/nginx/cloudflare.ini && \
-    certbot certonly --agree-tos --email jeong.sid@sidlibrary.org --non-interactive --config-dir /opt/nginx/cert.d/ --work-dir /opt/nginx/cert.d/ --logs-dir /opt/nginx/cert.d/ --dns-cloudflare --dns-cloudflare-credentials /opt/nginx/cloudflare.ini -d "*.sidlibrary.org"
+# RUN chmod 400 /opt/nginx/cloudflare.ini && \
+#    certbot certonly --agree-tos --email jeong.sid@sidlibrary.org --non-interactive --config-dir /opt/nginx/cert.d/ --work-dir /opt/nginx/cert.d/ --logs-dir /opt/nginx/cert.d/ --dns-cloudflare --dns-cloudflare-credentials /opt/nginx/cloudflare.ini -d "*.sidlibrary.org"
 
 RUN /usr/sbin/nginx -c "/opt/nginx/conf.d/nginx.conf" -t
 
