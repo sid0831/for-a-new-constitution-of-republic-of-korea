@@ -23,7 +23,7 @@ COPY --chown=www-data:www-data site /opt/nginx/content.d/
 
 RUN /usr/sbin/nginx -c "/opt/nginx/conf.d/nginx.conf" -t
 
-EXPOSE 80 443
+EXPOSE 8080 8443
 
 STOPSIGNAL SIGQUIT
 

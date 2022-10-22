@@ -26,6 +26,9 @@ theme:
   icon:
     repo: fontawesome/brands/github
 extra:
+  analytics:
+    provider: google
+    property: G-7KFLPM3KQZ
   version:
     provider: mike
     default: "latest"
