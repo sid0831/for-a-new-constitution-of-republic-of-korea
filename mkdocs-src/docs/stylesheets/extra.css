@@ -1,4 +1,4 @@
 article.md-content__inner p {
     text-align: justify;
-    word-break: keep-all;
+    word-break: break-all;
 }

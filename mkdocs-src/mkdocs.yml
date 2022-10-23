@@ -4,14 +4,14 @@ theme:
   name: material
   palette:
     - scheme: slate
-      primary: indigo
-      accent: red
+      primary: deep purple
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: "밝게 보기"
     - scheme: default
       primary: indigo
-      accent: red
+      accent: deep purple
       toggle:
         icon: material/brightness-7
         name: "어둡게 보기"
@@ -21,10 +21,12 @@ theme:
   language: kr
   features:
     - navigation.sections
-    - navigation.expand
+    - navigation.tabs
+    - navigation.tabs.sticky
     - toc.integrate
   icon:
     repo: fontawesome/brands/github
+
 extra:
   analytics:
     provider: google
@@ -32,13 +34,32 @@ extra:
   version:
     provider: mike
     default: "latest"
+
 extra_css:
   - stylesheets/extra.css
 copyright: "&copy; 2014-2022 Sidney Jeong, CC BY-SA 4.0. 이 사이트에서 제공하는 헌법안의 내용은 저의 개인적인 제안이며, 어느 관할구역에서도 효력이 없습니다."
 repo_url: https://github.com/sid0831/for-a-new-constitution-of-republic-of-korea
 repo_name: "sid0831/for-a-new-constitution-of-republic-of-korea"
+
 nav:
   - index.md
   - preamble.md
-  - chapter1.md
-  - chapter2.md
+  - '총칙':
+    - chapter1.md
+    - chapter2.md
+  - '권력구조':
+    - chapter3.md
+    - chapter4.md
+    - chapter5.md
+  - '사법':
+    - chapter6.md
+    - chapter7.md
+  - '헌법기관 및 지방자치':
+    - chapter8.md
+    - chapter9.md
+    - chapter10.md
+  - '재정과 경제':
+    - chapter11.md
+    - chapter12.md
+  - '헌법개정': chapter13.md
+  - '부칙' : addendum.md
